@@ -4,10 +4,14 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {   public int score = 0;
     public TextMeshProUGUI scoreText;
+
+    AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         scoreText.text = "Score: 0";
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +24,7 @@ public class ScoreManager : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         AddScore();
+        audioSource.Play();
         Destroy(collision.gameObject);
     }
 }
