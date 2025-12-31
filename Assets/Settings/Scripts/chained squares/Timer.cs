@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Timer : MonoBehaviour
@@ -8,21 +9,23 @@ public class Timer : MonoBehaviour
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
-    {
-        if (gameOver == false)
+   {
+        if (!gameOver)
         {
-            timeLeft = timeLeft - Time.deltaTime;
-
+            timeLeft -= Time.deltaTime;
             timerText.text = "Time: " + Mathf.Ceil(timeLeft);
 
             if (timeLeft <= 0)
             {
                 timeLeft = 0;
                 gameOver = true;
-              
+                EndGame();
             }
         }
     }
 
-    
+    void EndGame()
+    {
+        SceneManager.LoadScene(2); // END SCENE index
+    }
 }
