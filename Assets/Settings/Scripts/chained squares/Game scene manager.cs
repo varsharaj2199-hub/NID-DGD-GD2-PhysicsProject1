@@ -18,22 +18,21 @@ public class GameSceneManager : MonoBehaviour
         }
     }
 
-    // START BUTTON
+    // START BUTTON (Start Scene)
     public void StartGame()
     {
-        SceneManager.LoadScene(1); // GameScene
+        SceneManager.LoadScene(1); // Gameplay Scene
     }
 
     // CALLED WHEN TIMER ENDS
     public void GameOver()
     {
-        SceneManager.LoadScene(2); // GameOverScene
+        SceneManager.LoadScene(2); // End Scene
     }
 
-    // RESTART BUTTON
+    // RESTART BUTTON (End Scene)
     public void RestartGame()
     {
-        SceneManager.LoadScene(0); // StartScene
+        SceneManager.LoadScene(0); // Start Scene
     }
 }
-
