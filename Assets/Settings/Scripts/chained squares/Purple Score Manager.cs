@@ -18,6 +18,7 @@ public class PurpleScoreManager : MonoBehaviour
      public void AddScore()
     {
         score = score + 1;
+        GameResult.instance.purpleScore++;
         scoreText.text = "Score: " + score;
     }
 

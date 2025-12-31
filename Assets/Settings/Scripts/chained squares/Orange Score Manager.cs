@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
      public void AddScore()
     {
         score = score + 1;
+        GameResult.instance.orangeScore++;
         scoreText.text = "Score: " + score;
     }
 

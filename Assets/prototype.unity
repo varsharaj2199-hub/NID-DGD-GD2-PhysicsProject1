@@ -363,7 +363,6 @@ GameObject:
   - component: {fileID: 284553460}
   - component: {fileID: 284553459}
   - component: {fileID: 284553457}
-  - component: {fileID: 284553456}
   - component: {fileID: 284553455}
   m_Layer: 0
   m_Name: Pink square (1)
@@ -469,18 +468,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &284553456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284553454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!114 &284553457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +637,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.67, y: 3.3729997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &355095907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355095909}
+  - component: {fileID: 355095908}
+  m_Layer: 0
+  m_Name: Gameresult
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355095908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355095907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec229f7a21b46868f5b2245d0e78de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameResult
+  orangeScore: 0
+  purpleScore: 0
+--- !u!4 &355095909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355095907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 790.6044, y: 673.3372, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2968,7 +3001,6 @@ GameObject:
   - component: {fileID: 1169094220}
   - component: {fileID: 1169094219}
   - component: {fileID: 1169094223}
-  - component: {fileID: 1169094224}
   - component: {fileID: 1169094225}
   - component: {fileID: 1169094226}
   m_Layer: 0
@@ -3138,18 +3170,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1169094224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169094218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!114 &1169094225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,7 +3296,6 @@ GameObject:
   - component: {fileID: 1170848030}
   - component: {fileID: 1170848031}
   - component: {fileID: 1170848033}
-  - component: {fileID: 1170848032}
   - component: {fileID: 1170848034}
   m_Layer: 0
   m_Name: Pink square
@@ -3311,7 +3330,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!212 &1170848027
 SpriteRenderer:
   serializedVersion: 2
@@ -3471,18 +3490,6 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
---- !u!114 &1170848032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170848025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!114 &1170848033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4111,7 +4118,6 @@ GameObject:
   - component: {fileID: 1417501304}
   - component: {fileID: 1417501309}
   - component: {fileID: 1417501308}
-  - component: {fileID: 1417501307}
   - component: {fileID: 1417501306}
   - component: {fileID: 1417501305}
   m_Layer: 0
@@ -4259,18 +4265,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   score: 0
   scoreText: {fileID: 2067916415}
---- !u!114 &1417501307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417501303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!61 &1417501308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4437,6 +4431,50 @@ Transform:
   - {fileID: 587093021}
   - {fileID: 1564073378}
   - {fileID: 1079706466}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1512529538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512529540}
+  - component: {fileID: 1512529539}
+  m_Layer: 0
+  m_Name: GameSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1512529539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512529538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24cbadc5d1a140bfbf15c7d572ca99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Scenemanager
+--- !u!4 &1512529540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512529538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.78736, y: 3.54889, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1534117286
@@ -4911,7 +4949,6 @@ GameObject:
   - component: {fileID: 1601862948}
   - component: {fileID: 1601862953}
   - component: {fileID: 1601862952}
-  - component: {fileID: 1601862951}
   - component: {fileID: 1601862950}
   - component: {fileID: 1601862949}
   m_Layer: 0
@@ -5059,18 +5096,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   score: 0
   scoreText: {fileID: 2067916415}
---- !u!114 &1601862951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601862947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!61 &1601862952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5730,9 +5755,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2c19bc268b44438b1acaf9a02dbff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
-  timeLeft: 60
+  timeLeft: 5
   timerText: {fileID: 1073381814}
-  gameOver: 0
+  orangeScoreManager: {fileID: 0}
+  purpleScoreManager: {fileID: 0}
 --- !u!4 &1968481331
 Transform:
   m_ObjectHideFlags: 0
@@ -5763,7 +5789,6 @@ GameObject:
   - component: {fileID: 1970259665}
   - component: {fileID: 1970259664}
   - component: {fileID: 1970259663}
-  - component: {fileID: 1970259662}
   - component: {fileID: 1970259661}
   m_Layer: 0
   m_Name: Pink square (2)
@@ -5869,18 +5894,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1970259662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970259660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1703a495704a349ebb90ed1c1b153e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::score
 --- !u!114 &1970259663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6621,3 +6634,5 @@ SceneRoots:
   - {fileID: 1484463932}
   - {fileID: 1802515999}
   - {fileID: 1968481331}
+  - {fileID: 355095909}
+  - {fileID: 1512529540}
